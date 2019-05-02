@@ -20,7 +20,7 @@ Take some time after the session to give-it-a-go yourself by following instructi
 
 # Go to Sections:
 
-* **Section 1: Azure Custom Vision** - Creating a Dog Classification Algorithm, go to section
+* **Section 1: Azure Custom Vision** - Creating a Dog Classification Algorithm, [go to section](#azure-custom-vision-service)
 * **Section 2: Azure Logic Apps** - Creating serverless process to analyse an image and email you, go to section
 * **Section 3: Microsoft Powerapps** - Creating a front end application to take a picture of a dog and analyse it, go to section
 
