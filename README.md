@@ -12,7 +12,7 @@ In this interview, Amy will show you how she has built a prototype application i
 Take some time after the session to give-it-a-go yourself by following instructions below of how Amy built the solution.
 
 # Pre-Requisties for your machine:
-* Clone this repository to your local machine to gain images and code samples you need for the app: git clone [add url here] or choose 'Clone or Download' green button and then 'Download ZIP'
+* Clone this repository to your local machine to gain images and code samples you need for the app: git clone https://github.com/amynic/zero-to-ai-app.git or choose 'Clone or Download' green button and then 'Download ZIP'
 * Microsoft Azure Subscription - [sign up for free here](https://azure.microsoft.com/en-us/free/?WT.mc_id=build2019-event-amynic)
 * Laptop with a modern web browser (Google Chrome, Microsoft Edge)
 
