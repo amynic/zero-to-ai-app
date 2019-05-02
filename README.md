@@ -21,8 +21,8 @@ Take some time after the session to give-it-a-go yourself by following instructi
 # Go to Sections:
 
 * **Section 1: Azure Custom Vision** - Creating a Dog Classification Algorithm, [go to section](#azure-custom-vision-service)
-* **Section 2: Azure Logic Apps** - Creating serverless process to analyse an image and email you, go to section
-* **Section 3: Microsoft Powerapps** - Creating a front end application to take a picture of a dog and analyse it, go to section
+* **Section 2: Azure Logic Apps** - Creating serverless process to analyse an image and email you, [go to section](#azure-logic-apps)
+* **Section 3: Microsoft Powerapps** - Creating a front end application to take a picture of a dog and analyse it, [go to section](#microsoft-power-apps)
 
 # Want to learn more about the services in this project??
 After completeing the sample below be sure to check out [Microsoft Learn](https://docs.microsoft.com/en-us/learn/?WT.mc_id=build2019-event-amynic) for really great course content that will get you up-skilled in many different technologies. The relevant courses I would recommend after this project to have a look at the below:
