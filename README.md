@@ -398,11 +398,29 @@ On the properties pane for the button change the **Text** field to **Send**
 
 ![PowerApps Button Properties](docs-images/powerapps-button-properties.JPG)
 
+Now we need to add Azure Blob Storage as our data source. This will mean we can send the image taken by the camera in the app to storage and this will trigger our Logic app
+
+Go to **View** in the main toolbar, then **Data Sources**. This will open a pane on the right where you can click **Add Data Source**
 
 ![PowerApps Add Data Source](docs-images/powerapps-add-datasource.JPG)
 
+Select **New Connection** and search for **blob** in the search box. Then click the Azure Blob Storage option
+
+![PowerApps Add Data Source setup connection](docs-images/powerapps-datasource-setup.JPG)
+
+Insert the connection information for your Azure Blob Storage account you used in the Logic App scenario: example ainightsstor.
+
+![PowerApps Add Data Source setup connection](docs-images/PowerApps-azure-blob-storage-connection.JPG)
+
+Once authenticated you will then see your blob storage connection added to the connections pane
 
 ![PowerApps Data Added](docs-images/powerapps-data-added.JPG)
+
+Now we can use this connection in a function. Click on the **Send** button and switch to the **Advanced** pane.
+
+In the OnSelect box type: 
+ ``` AzureBlobStorage.CreateFile("images", TextInput1.Text, Camera1.Photo) ```
+
 
 ![PowerApps Azure Blob Function](docs-images/powerapps-function.JPG)
 
@@ -411,11 +429,17 @@ Now we have built an app lets test it in our development environment. In the top
 
 ![PowerApps Preview your app](docs-images/powerapps-preview-app.JPG)
 
+> Test you app by taking a picture of a dog (or anything at this point). The camera will take a picture - name it - click the send button. Once sent wait a moment and you should recieve an email as your Logic app will have triggered
+
+![PowerApps Preview your app](docs-images/powerapps-preview-running.JPG)
+
 Now we are going to **Save** and **Publish** the application so you can use it on your mobile device
 
-Go to the **File** tab in to top toolbar and choose the option on the left pane **Save**.
+Go to the **File** tab in to top toolbar and choose the option on the left pane **Save**. Then click the **save** button.
 
-PUBLISH THIS VERSION??
+Once saved you will have the **Publish** button appear - select this
+
+![PowerApps Publish](docs-images/powerapps-publish.JPG)
 
 ![PowerApps save](docs-images/powerapps-saved.JPG)
 
