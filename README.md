@@ -326,32 +326,141 @@ This will take you to the PowerApps main menu screen. Select the **Canvas App fr
 
 ![PowerApps main menu](docs-images/powerapps-main-menu.JPG)
 
+Provide an App Name, **example: Dog Spotter** and in this case select **Format:Phone**
+
 ![PowerApps Create Canvas App](docs-images/powerapps-create-canvas-app.JPG)
+
+This will load a screen like shown below. With a user interface for you to start building your application using the click-and-drag interface.
 
 ![PowerApps Blank App](docs-images/powerapps-blank-app.JPG)
 
+To start building our app we are going to need to insert some functionality. You will find the **insert** menu at the top of the page like below
+
 ![PowerApps Insert Tab](docs-images/powerapps-insert-tab.JPG)
 
+First we are going to insert **Camera** functionality. Under the insert tab select the **Media** dropdown and select the **Camera** option
 
 ![PowerApps Insert Camera](docs-images/powerapps-insert-camera.JPG)
 
+Position the camera in good place on the page and you will see a properties pane appear on the right side of the page
+
+Choose the **Advanced** tab from the properties pane. Under **Action** and **OnSelect** insert
+
+``` Collect(myPics, Camera1.Photo) ```
+
 ![PowerApps Camera Logic](docs-images/powerapps-camera-logic.JPG)
+
+Next we are going to insert a title for the application. Go to the **insert** tab and select the **Text** dropdown menu. Under this menu select **Label**
 
 ![PowerApps Insert Title](docs-images/powerapps-insert-title.JPG)
 
+Place the Title at the top of the page. Under the properties pane on the right update the options below:
+* **Text:** Dog Spotter (or another application name you would like)
+* **Font Size:** 60
+* **Text Alignment:** Center
+
+> Making other changes on the properties pane will change the look and information within your app. Please investigate the options available to you. In this tutorial we will only look at a few
+
 ![PowerApps Title Information](docs-images/powerapps-title-info.JPG)
 
+Now we are going to insert a **Photo Gallery**. When a photo is taken it will appear in the app at the bottom of the page.
+
+Go to the **Insert** tab and select **Gallery**. Choose the **Horizontal** option and position the item on the page below the camera
 
 ![PowerApps Insert Gallery](docs-images/powerapps-insert-gallery.JPG)
 
+In order for the application to know which pictures to use we reuse the **myPics** variable we created in the Camera setup
+
+On the properties pane, select **myPics** from the **Items** dropdown menu
+
 ![PowerApps Collection Images Setup](docs-images/powerapps-collection-images.JPG)
+
+Now select a single image slot from the gallery and on the properties pane select the **Advanced** tab. Complete the code below for the correct fields:
+
+* OnSelect: ``` Remove(myPics, ThisItem) ```
+* Image: ``` ThisItem.Url ```
 
 ![PowerApps Remove Images Setup](docs-images/powerapps-remove-image.JPG)
 
+Next we add a **Text Input** box from the **Text** menu on the insert tab. This box will allow us to give our image a name when we send it to Azure Blob Storage.
 
 ![PowerApps Insert Text Input](docs-images/powerapps-insert-text-input.JPG)
 
+Align the **Text Input** box underneath the Camera and above the Image gallery
+
+Finally add a **Button** to the page. This cna be found underneath the **Insert -> Controls -> Button** options
+
+Place the button next to the text input box underneath the Camera
+
 ![PowerApps Insert Button](docs-images/powerapps-insert-button.JPG)
+
+On the properties pane for the button change the **Text** field to **Send**
+
+![PowerApps Button Properties](docs-images/powerapps-button-properties.JPG)
+
+
+![PowerApps Add Data Source](docs-images/powerapps-add-datasource.JPG)
+
+
+![PowerApps Data Added](docs-images/powerapps-data-added.JPG)
+
+![PowerApps Azure Blob Function](docs-images/powerapps-function.JPG)
+
+
+Now we have built an app lets test it in our development environment. In the top right of the screen you will see the toolbar below - press the **Play** button highlighted. This will open a new window with your application running. This will ask for access to your camera to test the app
+
+![PowerApps Preview your app](docs-images/powerapps-preview-app.JPG)
+
+Now we are going to **Save** and **Publish** the application so you can use it on your mobile device
+
+Go to the **File** tab in to top toolbar and choose the option on the left pane **Save**.
+
+PUBLISH THIS VERSION??
+
+![PowerApps save](docs-images/powerapps-saved.JPG)
+
+In order to view your published app on your phone you will need to download the PowerApps app from your app store. 
+
+> For this tutorial the instructions will be for IOS.
+
+![PowerApps IPhone download](docs-images/powerapps-download.png)
+
+Once the app is download. Open the application and log in with your organizational credentials. Once logged in you should see all your organizations apps listed
+
+![PowerApps apps listed on phone](docs-images\PowerApps-in-PowerApps-on-phone.png)
+
+For you Dog Spotter app we want to add it to your home screen like any other application. Click on the 3 dots (...) and select **pin to home**
+
+![PowerApps Pin to home screen](docs-images/powerapps-pin-app.png)
+
+This will open the web browser where you follow the instructions to add it to your home screen. Select the share button.
+
+![PowerApps add to home screen](docs-images/powerapps-add-to-homescreen.png)
+
+Select **Add to Home Screen**
+
+![PowerApps add to home screen using IOS functionality](docs-images/powerapps-add-to-homescreen-button.png)
+
+Provide your application useful name to be shown on your phone and select Add
+
+![PowerApps Home Screen Details](docs-images/powerapps-homescreen-detail.png)
+
+## Congratulations!! 
+
+The app is now added to your phone home screen and you can open and run the functionality.
+
+Test the app by taking a picture of a dog and sending it to the cloud.
+
+I am really keen to hear your feedback, thoughts and see the outcomes you create from this tutorial. 
+Find me on Twitter: [@AmyKateNicho](https://twitter.com/AmyKateNicho) and LinkedIn: [https://www.linkedin.com/in/amykatenicho/](https://www.linkedin.com/in/amykatenicho/)
+
+
+
+
+
+
+
+
 
 
 
