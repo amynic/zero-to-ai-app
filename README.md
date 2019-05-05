@@ -443,6 +443,12 @@ Once saved you will have the **Publish** button appear - select this
 
 ![PowerApps save](docs-images/powerapps-saved.JPG)
 
+You can also edit the look of the icon for the application. In the **File** menu go to **App Settings**.
+
+In **App Name and Icon** select a background color for your application and choose an icon. You can also upload you own. Why not add a dog icon? Download the icon from [here](sample-code/dog-icon.png) and choose the **browse** button to add your own icon
+
+![PowerApps Change App Settings](docs-images/powerapps-app-settings.JPG)
+
 In order to view your published app on your phone you will need to download the PowerApps app from your app store. 
 
 > For this tutorial the instructions will be for IOS.
