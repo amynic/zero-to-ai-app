@@ -6,16 +6,16 @@ Sometimes it can be hard to get 'buy in' from investors or management when you h
 But … wouldn't it be brilliant to provide your team with a Proof-of-Concept application, infused with intelligence, that took you the fraction of the time to build? Could showing something ‘real’ really test the viability of an idea and gain buy-in for further development?
 
  
-In this interview, Amy will show you how she has built a prototype application infused with intelligence using Azure Platform-as- a-Service (PaaS) offerings such as [Azure Custom Vision service](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home/?WT.mc_id=build2019-event-amynic), [Azure Logic Apps](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview/?WT.mc_id=build2019-event-amynic) and [Microsoft PowerApps's](https://docs.microsoft.com/en-us/powerapps/powerapps-overview/?WT.mc_id=build2019-event-amynic) platforms. By linking these services together you can build reliable, scalable AI applications and get your customers testing them as soon as possible. 
+In this interview, Amy will show you how she has built a prototype application infused with intelligence using Azure Platform-as- a-Service (PaaS) offerings such as [Azure Custom Vision service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home/?WT.mc_id=aiml-0000-amynic), [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview/?WT.mc_id=aiml-0000-amynic) and [Microsoft PowerApps's](https://docs.microsoft.com/powerapps/powerapps-overview/?WT.mc_id=aiml-0000-amynic) platforms. By linking these services together you can build reliable, scalable AI applications and get your customers testing them as soon as possible. 
 
  
 Take some time after the session to give-it-a-go yourself by following instructions below of how Amy built the solution.
 
-### Recording of this session is available **[HERE!](https://mybuild.techcommunity.microsoft.com/sessions/77285?source=sessions#top-anchor)**
+### Recording of this session is available **[HERE!](https://mybuild.techcommunity.microsoft.com/sessions/77285?source=sessions&WT.mc_id=aiml-0000-amynic#top-anchor)**
 
 # Pre-Requisties for your machine:
 * Clone this repository to your local machine to gain images and code samples you need for the app: git clone https://github.com/amynic/zero-to-ai-app.git or choose 'Clone or Download' green button and then 'Download ZIP'
-* Microsoft Azure Subscription - [sign up for free here](https://azure.microsoft.com/en-us/free/?WT.mc_id=build2019-event-amynic)
+* Microsoft Azure Subscription - [sign up for free here](https://azure.microsoft.com/free/?WT.mc_id=aiml-0000-amynic)
 * Laptop with a modern web browser (Google Chrome, Microsoft Edge)
 
 > All demos and content have been tested on a Windows PC, however all options should run from macOS and Linux machines as well. Please provide information via an issue or pull request if you have feedback
@@ -27,11 +27,11 @@ Take some time after the session to give-it-a-go yourself by following instructi
 * **Section 3: Microsoft Powerapps** - Creating a front end application to take a picture of a dog and analyse it, [go to section](#microsoft-power-apps)
 
 # Want to learn more about the services in this project??
-After completeing the sample below be sure to check out [Microsoft Learn](https://docs.microsoft.com/en-us/learn/?WT.mc_id=build2019-event-amynic) for really great course content that will get you up-skilled in many different technologies. The relevant courses I would recommend after this project to have a look at the below:
-* [Classify Images with the Microsoft Custom Vision Service](https://docs.microsoft.com/en-us/learn/modules/classify-images-with-custom-vision-service/?WT.mc_id=build2019-event-amynic)
-* [Introduction to Azure Logic Apps](https://docs.microsoft.com/en-us/learn/modules/intro-to-logic-apps/?WT.mc_id=build2019-event-amynic)
-* [Call an API from a Logic Apps workflow using a custom connector](https://docs.microsoft.com/en-us/learn/modules/logic-apps-and-custom-connectors/?WT.mc_id=build2019-event-amynic)
-* [Lots of different Microsoft PowerApps modules for you to try](https://docs.microsoft.com/en-us/learn/browse/?resource_type=learning%20path&term=powerapps/?WT.mc_id=build2019-event-amynic)
+After completeing the sample below be sure to check out [Microsoft Learn](https://docs.microsoft.com/learn/?WT.mc_id=aiml-0000-amynic) for really great course content that will get you up-skilled in many different technologies. The relevant courses I would recommend after this project to have a look at the below:
+* [Classify Images with the Microsoft Custom Vision Service](https://docs.microsoft.com/learn/modules/classify-images-with-custom-vision-service/?WT.mc_id=aiml-0000-amynic)
+* [Introduction to Azure Logic Apps](https://docs.microsoft.com/learn/modules/intro-to-logic-apps/?WT.mc_id=aiml-0000-amynic)
+* [Call an API from a Logic Apps workflow using a custom connector](https://docs.microsoft.com/learn/modules/logic-apps-and-custom-connectors/?WT.mc_id=aiml-0000-amynic)
+* [Lots of different Microsoft PowerApps modules for you to try](https://docs.microsoft.com/learn/browse/?resource_type=learning path&term=powerapps%2F%3FWT.mc_id%3Dbuild2019-event-amynic&WT.mc_id=aiml-0000-amynic)
 
 # Azure Custom Vision Service
 ## Creating a Dog Classification Algorithm
@@ -51,7 +51,7 @@ There is also a set of test images (not for training) in this [.zip folder](samp
 
 First create a Custom Vision instance in your Azure account. 
 
-* Go to the [Azure Portal](https://ms.portal.azure.com) main dashboard. 
+* Go to the [Azure Portal](https://ms.portal.azure.com/?WT.mc_id=aiml-0000-amynic) main dashboard. 
 * Click 'Create a Resource' in the top left
 * Search for 'Custom Vision' 
 * On the description pane for Custom Vision click Create.
@@ -322,7 +322,7 @@ Congratulations!! you created an end-to-end process using an AI service.
 
 > NOTE: you must use your organizational account to use PowerApps.
 
-Navigate to: [https://powerapps.microsoft.com/en-us/?WT.mc_id=build2019-event-amynic](https://powerapps.microsoft.com/en-us/) and sign in with your organizational account.
+Navigate to: [https://powerapps.microsoft.com/?WT.mc_id=aiml-0000-amynic](https://powerapps.microsoft.com/?WT.mc_id=aiml-0000-amynic) and sign in with your organizational account.
 
 This will take you to the PowerApps main menu screen. Select the **Canvas App from Blank** button
 
